@@ -13,7 +13,7 @@ This repository serves as a reference for the **[Generative AI for Software Deve
 
 ---
 
-## **Credits & License**
+## **Credits**
 
 This project was developed as part of the **Generative AI for Software Development** Specialization on Coursera.
 
@@ -129,7 +129,7 @@ Validate and protect the application through every stage:
 
 #### **Module 1: Testing and Debugging**
 
-**Testing and Debugging Strategies**
+**2.1 Testing and Debugging Strategies**
 
 ```
 "As an expert software tester who's teaching a new person how to write test cases, can you please analyze this code and provide a set of test cases explaining each one?"
@@ -139,7 +139,7 @@ Validate and protect the application through every stage:
 "Create a checklist of common failure points for this specific type of algorithm (e.g., recursion depth, off-by-one errors) and check this code against them."
 ```
 
-**Exploratory Testing**
+**2.1 Exploratory Testing**
 
 ```
 "You are a software engineer and tester who is curious and who likes to go through code looking for edge cases. There's some Python code here -- please explore it and find any issues that might cause bugs or poor functionality."
@@ -149,7 +149,7 @@ Validate and protect the application through every stage:
 "Identify any 'hidden' assumptions in this code—logic that assumes a network is always up or that a database query will never return an empty set."
 ```
 
-**Memory & Mutability Analysis (New Category)**
+**2.1 Memory & Mutability Analysis (New Category)**
 
 ```
 "Analyze this code for 'Mutable Default Argument' bugs. Does any function use a list or dictionary as a default parameter value? Explain why this is dangerous in Python's memory model."
@@ -161,7 +161,7 @@ Validate and protect the application through every stage:
 "Look for instances of unnecessary string concatenation in loops. Explain the memory penalty incurred by string immutability in this context and refactor using "".join()."
 ```
 
-**Functional Testing**
+**2.1 Functional Testing**
 
 ```
 "I’m working on a simple todo list app. Here is the code. In exploratory testing, the tester came with these lines of code: [Insert Code]. As an expert software tester, write code that converts the output of the exploratory testing into functional tests using the unittest module in python."
@@ -171,7 +171,7 @@ Validate and protect the application through every stage:
 "Generate a traceability matrix that maps these functional tests back to the specific project requirements provided."
 ```
 
-**Automated Testing**
+**2.1 Automated Testing**
 
 ```
 "You are an expert in PyTest for automated testing of python code. Please amend this code with a comprehensive set of tests in Pytest to find bugs or other issues in the code."
@@ -185,7 +185,7 @@ Validate and protect the application through every stage:
 "Create a Mocking strategy for this function so I can test the logic without actually making calls to the external Stripe API."
 ```
 
-**Software Performance Testing**
+**2.1 Software Performance Testing**
 
 ```
 "How would I measure how long it takes to call this function in Python?"
@@ -203,7 +203,7 @@ Validate and protect the application through every stage:
 
 #### **Security and Quality Assurance**
 
-**Analyzing Code for Security Vulnerabilities**
+**2.1 Analyzing Code for Security Vulnerabilities**
 
 ```
 "You are an expert in web security and in creating API endpoints. With the following code, there are likely many vulnerabilities. Can you create some test cases that test against these vulnerabilities?"
@@ -215,7 +215,7 @@ Validate and protect the application through every stage:
 "Explain how to sanitize the inputs in this function to prevent command injection attacks."
 ```
 
-**Code Refactoring and Maintainability**
+**2.1 Code Refactoring and Maintainability**
 
 ```
 "Analyze this code for 'Code Smells' like long methods, duplicate logic, or overly complex conditionals. Suggest a refactored version that is easier to read."
@@ -227,7 +227,7 @@ Validate and protect the application through every stage:
 "Refactor this code to use 'Immutable Data Structures' (like Tuples instead of Lists) where data should not change, to improve thread safety and predictability."
 ```
 
-**Integration and API Testing**
+**2.1 Integration and API Testing**
 
 ```
 "This function relies on three different microservices. Generate a set of integration tests that verify the data contract between these services is maintained."
@@ -239,7 +239,7 @@ Validate and protect the application through every stage:
 
 #### **Module 2: Documentation**
 
-**Inline Comments**
+**2.2 Inline Comments**
 
 ```
 "Write a function [Insert Task] intended for an experienced Python developer. Use minimal, high-level comments that focus on architectural decisions rather than syntax."
@@ -253,8 +253,7 @@ Validate and protect the application through every stage:
 "Add 'TODO' and 'FIXME' comments to this code. Identify technical debt or areas that require future optimization based on these requirements: [Insert Requirements]."
 ```
 
-**Documentation Comments**
-**Prompts for Different Audiences**
+**2.2 Documentation Comments: Prompts for Different Audiences**
 
 ```
 "For Junior Developers: Write a docstring for this function that explains the logic step-by-step. Avoid overly technical jargon and use analogies where helpful to explain the data transformation."
@@ -268,7 +267,7 @@ Validate and protect the application through every stage:
 "For External API Consumers: Write a formal documentation block for this public method. Include clear descriptions for all parameters, expected return types, and a list of possible exceptions it might throw."
 ```
 
-**Prompts for Specific Docstring Styles**
+**2.2 Prompts for Specific Docstring Styles**
 
 ```
 "Google Style: Refactor the existing documentation for this function to follow the Google Python Style Guide. Ensure the 'Args', 'Returns', and 'Raises' sections are formatted correctly."
@@ -282,7 +281,7 @@ Validate and protect the application through every stage:
 "Javadoc Style: Provide a Javadoc compliant comment for this method. Use @link tags to reference related classes and ensure the @see section points to the relevant module."
 ```
 
-**Alternative Documentation Types**
+**2.2 Alternative Documentation Types**
 
 ```
 "The 'Usage Example' Focus: Instead of explaining the logic, provide three different code examples of how to implement this function in a real-world scenario."
@@ -296,7 +295,7 @@ Validate and protect the application through every stage:
 "Unit Test Documentation: Write documentation for the test suite of this function. Explain what each test case is verifying (e.g., 'Verifies null handling', 'Verifies high-load performance') so a tester understands the coverage."
 ```
 
-**Maintenance and Structural Analysis**
+**2.2 Maintenance and Structural Analysis**
 
 ```
 "Deprecation Notice: Analyze this legacy function and generate a Deprecation Notice. Explain why it is being phased out, what the new alternative is, and provide a timeline for removal."
@@ -308,7 +307,7 @@ Validate and protect the application through every stage:
 "Complexity Critique: Identify areas where the code is too 'clever' or obfuscated. Rewrite it for maximum readability so a developer can understand it at a glance without needing a docstring."
 ```
 
-**Automated Documentation Tools**
+**2.2 Automated Documentation Tools**
 
 ```
 "As an expert in generating automatic documentation, can you help me set up Sphinx to generate documentation for the following python code?"
@@ -324,7 +323,7 @@ Validate and protect the application through every stage:
 "Compare Sphinx vs. MkDocs for a fast-growing Python API project. Which one offers better support for versioned documentation and searchable indexes?"
 ```
 
-**API Specification & Tooling**
+**2.2 API Specification & Tooling**
 
 ```
 "Convert this Python FastAPI/Flask code into a comprehensive OpenAPI 3.0 (Swagger) specification in YAML format. Include all request parameters, response schemas, and authentication headers."
@@ -334,7 +333,7 @@ Validate and protect the application through every stage:
 "Generate a ProtoBuf (Protocol Buffers) definition file based on these Python class structures to facilitate high-performance microservice communication."
 ```
 
-**Documentation Quality & Linting**
+**2.2 Documentation Quality & Linting**
 
 ```
 "Act as a documentation linter. Scan this code and identify any functions that are missing docstrings or have parameters that don't match the current implementation."
@@ -346,7 +345,7 @@ Validate and protect the application through every stage:
 
 #### **Module 3: Dependency Management**
 
-**Virtual Environments**
+**2.3 Virtual Environments**
 
 ```
 "You're an expert in Python virtual environment setup. What steps can I follow to set up a virtual environment on my Mac using venv?"
@@ -360,7 +359,7 @@ Validate and protect the application through every stage:
 "Explain the difference between bin/python inside a virtual environment and the system /usr/bin/python3. How does the PATH variable change when I run source bin/activate?"
 ```
 
-**Researching and Selecting Dependencies**
+**2.3 Researching and Selecting Dependencies**
 
 ```
 "I am working on a simple web application in Python. Below are the dependencies currently listed for that project. For each one write me a short summary of what it does and whether I should trust it."
@@ -372,7 +371,7 @@ Validate and protect the application through every stage:
 "I need a library for [Task, e.g., Image Processing]. Compare the top three Python libraries for this, focusing on performance, community support, and licensing (e.g., MIT vs. GPL)."
 ```
 
-**Dependency Conflicts and Resolution**
+**2.3 Dependency Conflicts and Resolution**
 
 ```
 "I am working on a simple web application in Python. Below are the dependencies currently listed for that project. Are there any known dependency conflicts between the versions of the libraries I am using?"
@@ -384,7 +383,7 @@ Validate and protect the application through every stage:
 "Help me write a 'Constraints File' to force specific versions of sub-dependencies across my entire development team without explicitly adding them to my main requirements.txt."
 ```
 
-**Security and Vulnerability Scanning**
+**2.3 Security and Vulnerability Scanning**
 
 ```
 "How can I check that the packages in my current Python environment are secure?"
@@ -396,7 +395,7 @@ Validate and protect the application through every stage:
 "Explain the risks of 'Dependency Confusion' attacks and how I can configure my package manager to prioritize our private internal PyPI server over the public one."
 ```
 
-**Dependency Management in Other Languages**
+**2.3 Dependency Management in Other Languages**
 
 ```
 "How can I check the following package.json file for known dependency issues?"
@@ -406,7 +405,7 @@ Validate and protect the application through every stage:
 "Analyze this Gemfile (Ruby) or Cargo.toml (Rust) and explain the equivalent 'lockfile' concept in those ecosystems. How do they handle reproducible builds compared to Python's requirements.txt?"
 ```
 
-**Docker and Containerized Dependencies**
+**2.3 Docker and Containerized Dependencies**
 
 ```
 "Write a multi-stage Dockerfile for this Python project that ensures the build-time dependencies (like compilers) are not included in the final production image to keep the size small."
@@ -420,8 +419,9 @@ Validate and protect the application through every stage:
 
 ### **AI-Powered Software and System Design Course**
 
-#### **Module 1: Data Serialization and Configuration-Driven Development**
+#### **Module 1:**
 
+**3.1 Data Serialization and Configuration-Driven Development**
 ```
 "You are an expert on software design paradigms. I am working on building a simple Python-based app that will make calls to the DALL-E API and generate images for users. The application will be deployed in many different contexts and configurations depending on the end users, and I want my less technical colleagues to be able to do some customization without editing the code itself. What high level software design paradigms should I consider for this project?"
 
@@ -454,7 +454,7 @@ Adding parameters and serializing results: "Can you make 2 more modifications: F
 
 #### **Module 2: Databases**
 
-**Design and implement a database schema**
+**3.2 Design and implement a database schema**
 
 ```
 Design database schema: "I need to develop a database for a social network. The database will track individual people, and store information about them including their name, age, hometown, and hobbies. The database will also store relationships between people, including family relationships, friendships, work colleagues, and schoolmates. Suggest a schema that would work for this."
@@ -464,7 +464,7 @@ Creating the e-commerce schema: "Design a database schema for an e-commerce appl
 Design database schema: "I have a sqlite database set up in Python using SQLAlchemy. Help me implement tables for the following schema: … "
 ```
 
-**Implementing CRUD operations**
+**3.2 Implementing CRUD operations**
 
 ```
 The create operation: "What are the things to consider when you implement the create operation for a database?"
@@ -478,14 +478,14 @@ Update operation: "Generate  code that implements an update function for this da
 Checking for vulnerabilities: "I'm using this code in a SQL database. Is there a chance that it's vulnerable to SQL injection attack as SQLAlchemy appears to use SQL under-the-hood?"
 ```
 
-**Advanced querying**
+**3.2 Advanced querying**
 
 ```
 Write SQL queries: "Write a SQLAlchemy query to find all orders placed by a specific user in the e-commerce database."
 More complex SQL queries: "Write a SQLAlchemy query to find the total quantity of each product sold in this database."
 ```
 
-**Databaset optimization**
+**3.2 Databaset optimization**
 
 ```
 General: "What are some of the best practices to improve the performance of this database?"
@@ -502,13 +502,13 @@ Debugging queries: "How do use the EXPLAIN feature in SQLAlchemy to debug querie
 
 #### **Module 3: Software Design Patterns**
 
-**Gang of Four patterns overview**
+**3.3 Gang of Four patterns overview**
 
 ```
 Exploring design Patterns: "Give me a high-level overview of the Gang of Four design patters."
 ```
 
-**Patterns advice**
+**3.3 Patterns advice**
 
 ```
 Building a financial services app: "You are an expert Python developer who builds readable code. Together we will work on an application that has a database to store information, code to retrieve data from the database, and analytics that will run on the retrieved data. First, let's create the database, which has a table for companies. The table will have three columns, the first is an id, the second the ticker for the company, the third is the name of the company. Create this, and synthesize data for 10 companies, adding that to the database."
@@ -522,7 +522,7 @@ Requesting design pattern advice iteratively: "Instead of making all the changes
 "Enhance the following code  to use the Gang of Four patterns.  Strictly follow the common conventions  for any patterns that you choose."
 ```
 
-**Factory Patterns**
+**3.3 Factory Patterns**
 
 ```
 Implementing the Factory Pattern: "Enhance the following code to use the Factory gang-of-four pattern. Strictly follow the common conventions for the pattern. Start by explaining the conventions for the Factory pattern and why it makes sense to use it here. Then describe how the code modifications you made strictly follow the conventions of the pattern. YOUR CODE HERE..."
@@ -530,7 +530,7 @@ Implementing the Factory Pattern: "Enhance the following code to use the Factory
 Multiple company types using the Factory Pattern: "Go back to the code that adds data to the database and synthesize some foreign companies (which will have a unique ID, but the ticker is always 'ZZZZ') and the data for them, both in the companies table and in the time series table. Then fully explain the Factory pattern by having multiple company types -- a Domestic Company that is denoted by its ticker, and a Foreign Company that is denoted by its ID. Create code that shows how."
 ```
 
-**Template Method Pattern**
+**3.3 Template Method Pattern**
 
 ```
 Requesting Information on the Template Pattern: "Great - the third pattern you mentioned was the Template Method pattern. Can you demonstrate where, how, and why you would use it in this code? What advantages would it provide?"
